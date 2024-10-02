@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hello world! | soliloquyOS</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html"><span class="logo">soliloquyOS</span> Devlog</a>
+      </h1>
+    </header>
+    <br />
+    <article class="post-content">
+      <h2>hello world!</h2>
+      <div class="post-meta">
+        Posted on the 2nd of October, 2024 by Marceline
+      </div>
+      <p>
+        <span class="tab"></span>so! this is the start of a pretty exciting
+        project: soliloquyOS. a foss operating system built from the ground up
+        for vr. unlike every other vr os on the market, soliloquyOS is being
+        built from the ground up to be used for 3d interfaces, not floating 2d
+        windows in a 3d space.
+      </p>
+      <br />
+      <p>
+        <span class="tab"></span>i guess i'm starting this project because this
+        is something that i would actually <i>want</i> to use. currently,
+        there's no real reason for me to use vr over a traditional display on a
+        laptop or desktop for my everyday computing tasks. game development,
+        making npr artwork in blender, colour grading in resolve, standard web
+        browsing stuff, etc. but soliloquy would ideally give me some sort of
+        reason to do these tasks in vr.
+      </p>
+      <br />
+      <p>
+        <span class="tab"></span>i've decided to open source this because i
+        believe that the democratisation of software is important. i mean who
+        even benefits from software being completely closed source? besides
+        corporations that want to get stupidly rich, lol. so yeah, feel free to
+        steal this code. it's free under an MIT license. and maybe even
+        contribute if you're feeling kind :)
+      </p>
+      <br />
+      <p>
+        <span class="tab"></span>oh, and just as a small aside here, i don't
+        plan on having backwards compatibility for any other programs. i mean
+        how could you? soliloquy is meant to run applications with 3d
+        interfaces. and i don't know any programs currently, no matter how
+        baisc, that <i>have</i> 3d interfaces. and so, to mark the occasion,
+        i've decided against using MSWIN4.1 as my bdb_oem. instead opting for:
+      </p>
+      <pre><code>bdb_oem:                    db 'slqy-os '       ;8 bytes</code></pre>
+      <br />
+      <p>
+        <span class="tab"></span>now. progress. where am i at so far? well, not
+        far. i've only started work on soliloquy i think 2 days ago. i've got a
+        logo (which still needs a name):
+      </p>
+      <img src="/img/logo.png" alt="soliloquy os logo" />
+      <p>
+        i also have a super simple kernel that displays a message using bios
+        interrupts:
+      </p>
+      <img
+        src="/img/hello-world.png"
+        alt="current state of soliloquy os kernel"
+      />
+      <p>
+        and a bootloader with a fat12 file system. that's it. very early days at
+        the moment. over the next few weeks, i want to try and display an image
+        in soliloquy. and a terminal would be cool too. i'm not quite sure
+        <i>when</i> i should start tailoring the os for vr, but i guess i'll
+        figure that out when i come to it. ok, that's it for now. cheers :)
+      </p>
+
+      <div class="contact-card">
+        <div class="contact-info">
+          <h3>get in touch</h3>
+          <div class="contact-links">
+            <a href="https://github.com/soliloquyOS" target="_blank">
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              GitHub
+            </a>
+            <a href="mailto:marceline.mail2@gmail.com">
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
