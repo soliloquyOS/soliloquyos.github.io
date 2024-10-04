@@ -42,11 +42,47 @@ header a {
 }
 
 #menu-toggle {
-  /*display: none;*/
+  display: none;
   background: none;
   border: none;
   font-size: 1.5em;
   cursor: pointer;
+}
+
+#mobile-nav {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mobile-nav a {
+  display: block;
+  padding: 0.5em 0;
+  text-decoration: none;
+  color: #161618;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  #mobile-nav {
+    display: none !important;
+  }
 }
 
 .container {
@@ -63,16 +99,19 @@ aside {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 98;
   padding: 1em;
   overflow-y: auto;
-  background-color: red;
 }
 
 a {
   color: #161618;
   text-decoration: none;
   border-bottom: 2px solid #161618;
+}
+
+a:visited {
+  color: #161618;
 }
 
 aside ul {
@@ -85,7 +124,8 @@ aside li {
 
 .logo {
   font-family: 'letters-home', sans-serif;
-  color: #9bf1dd;
+  color: #9bf1dd !important;
+  font-size: 1.5em;
 }
 
 .main-content {
@@ -106,6 +146,7 @@ aside li {
 @media screen and (max-width: 768px) {
   #menu-toggle {
     display: block;
+    color: #161618;
   }
 
   aside.active {

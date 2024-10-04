@@ -2,6 +2,8 @@
 devlog #2:
     - wrote the first c!
     -fat12 file system
+    -c works
+    -over 1000 lines of code :)
 
 
 to-do
