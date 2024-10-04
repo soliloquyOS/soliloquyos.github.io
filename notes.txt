@@ -1,4 +1,7 @@
 - a dark mode would be cool
+devlog #2:
+    - wrote the first c!
+    -fat12 file system
 
 
 to-do
